@@ -21,6 +21,7 @@ libOmxVdec-def += -DENABLE_DEBUG_HIGH
 libOmxVdec-def += -DENABLE_DEBUG_ERROR
 libOmxVdec-def += -UINPUT_BUFFER_LOG
 libOmxVdec-def += -UOUTPUT_BUFFER_LOG
+libOmxVdec-def += -fno-strict-aliasing
 ifeq ($(TARGET_BOARD_PLATFORM),msm8660)
 libOmxVdec-def += -DMAX_RES_1080P
 libOmxVdec-def += -DPROCESS_EXTRADATA_IN_OUTPUT_PORT
